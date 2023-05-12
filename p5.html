@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5. CSS Estilos avanzados</title>
+    <style>
+        img {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 5px 7.5px #dfdddd;
+        }
+        .button {
+            border: 1px solid black;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            margin-left: 2px;
+            margin-right: 2px;
+            cursor: pointer;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 5px;
+            display: inline-block;
+            color: white;
+            
+            
+        }
+        .button>a {
+            text-decoration: none;
+        }
+        #green {
+            background-color: green;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #red {
+            background-color: red;
+        }
+        #gray {
+            background-color: gray;
+        }
+        #black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctica 5. CSS Estilos avanzados</h1>
+    <h2>Bordes redondeados y opacidad</h2>
+    <p>
+        <img style="opacity: 0.50;" src="https://placeimg.com/320/200/tech">
+        <img src="https://placeimg.com/320/200/tech">
+    </p>
+    <h2>Botones</h2>
+    <ul>
+        <li id ="green" class="button"><a href="https://www.solidbackgrounds.com/islamic-green-solid-color-background.html">Green</a></li>
+        <li id ="blue"  class="button"><a href="https://www.solidbackgrounds.com/vivid-sky-blue-solid-color-background.html">Blue</a></li>
+        <li id="red" class="button"><a href="https://www.solidbackgrounds.com/red-solid-color-background.html">Red</a></li>
+        <li id="gray" class="button"><a href="https://www.solidbackgrounds.com/gray-x11-gui-gray-solid-color-background.html">Gray</a></li>
+        <li id="black" class="button"><a href="https://www.solidbackgrounds.com/black-solid-color-background.html">Black</a></li>
+    </ul>
+</body>
+</html>
