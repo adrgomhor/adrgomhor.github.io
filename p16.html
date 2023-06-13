@@ -2,18 +2,91 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta+Malar:300,700">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta+Malar:300,700">
+    <title>Práctica 16. Grid-layout</title>
     <style>
+        body{
+            font-family: "Mukta Malar", sans-serif;
+        }
+
+        section{
+            padding: 4vh;
+            box-shadow: 0px 0.5em 2em rgba(0,0,0,0.3);
+            margin: 0 auto;
+            margin-bottom: 3em;
+        }
+        .card{
+            margin: 1.5%;
+            width: 30%;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .card img{
+            max-width: 100%;
+        }
+
+        .card p{
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        section.grid-layout-one div.grid-parent{
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            gap: 5vh;
+        }
+
+        section.grid-layout-one .card{
+            width: 100%;
+        }
+
+        /*Apartado 2*/
+        section.grid-layout-two{
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+        }
+
+
+        section.grid-layout-two .title{
+            grid-column: 1 / span 3;
+
+        }
+
+        section.grid-layout-two footer{
+            grid-column: 1 / span 3;
+        }
+
+        .sidebar{
+            background-color: #407c84;
+            color: white;
+            padding: 1em;
+        }
         
+
+        .main{
+            background-color: aliceblue;
+            color: #333;
+            padding: 1em;
+        }
+
+        .main .card{
+            float: left;
+        }
+
+        footer{
+            background-color: #676a6f;
+            color: white;
+            padding: .5em;
+        }
     </style>
+
 </head>
 
 <body>
-
     <section class="grid-layout-one">
         <h1>Using CSS Grid</h1>
         <div class="grid-parent">
