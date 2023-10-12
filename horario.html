@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="LOGO.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        .foto {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        .horario {
+            text-align: center;
+        }
+
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            
+        }
+        
+        ul.menu li>a.active {
+            float: left;
+        }
+        
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        ul.menu li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        ul.menu li.right {
+            float: right;
+        }
+        
+        @media screen and (max-width: 600px) {
+            ul.menu li.right,
+            ul.menu li {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a class="active" href="#home"><img src="LOGO.png" width="100px" height="100px" alt=""></a></li>
+        <li class="actcont"><a  href="paginaweb.html">Actividades</a></li>
+        <li class="actcont"><a  href="horario.html">Horario</a></li>
+    </ul>
+
+    <h1 class="horario"><b>HORARIO EXTRAESCOLARES PRIMARIA 23-24</b></h1>
+    <img src="horario.png" class="foto">
+</body>
+</html>
